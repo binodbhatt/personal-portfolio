@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Personal Portfolio</title>
-  </head>
-  <body>
-    <section class="banner">
-      <header>
-        <a href="#" class="logo">Portfolio</a>
-        <div class="toggle"></div>
-      </header>
-      <div class="content">
-        <div class="contentBx">
-          <h4>Hello,</h4>
-          <h2>I'm Binod</h2>
-          <h3>A web designer</h3>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      const toggle = document.querySelector(".toggle");
-      const banner = document.querySelector(".banner");
-      toggle.onclick = function () {
-        toggle.classList.toggle("active");
-        banner.classList.toggle("active");
-      };
-    </script>
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Personal Portfolio</title>
+    </head>
+    <body>
+        <section class="banner">
+            <header>
+            <img src="https://cdn-icons.flaticon.com/png/512/3001/premium/3001764.png?token=exp=1647703529~hmac=ef2de43df686bcdb87ff0e8f3de7bb5f" class="men>"
+                <a href="#" class="logo">Portfolio</a>
+                <div class="toggle"></div>
+            </header>
+            <div class="content">
+                <div class="contentBx">
+                    <h4>Hello,</h4>
+                    <h2>I'm Binod</h2>
+                    <h3>A web designer</h3>
+                    <p>Hi, this is Binod from Nepal. How are you doing? I hope you're having a fantastic day and turning this day into a brilliant and magnificent one. I like photography, running, drawing, studying, and watching movies.</p>
+                    <a href="#">Hire Me</a>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+            
+          <ul class="sci">
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png"></a></li>
+              <li><a href="#"><img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504839.png?token=exp=1647706984~hmac=2e9c5a730de6ceec723bcc526a5ed1fa"></a></li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"></a></li>
+          </ul>  
+        </section>
+        
+        <script>
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.onclick = function(){
+                toggle.classList.toggle('active');
+banner.classList.toggle('active');               
+                
+            }
+        </script>
+    </body>
 </html>
