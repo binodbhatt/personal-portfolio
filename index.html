@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+      </header>
+      <div class="content">
+        <div class="contentBx">
+          <h4>Hello,</h4>
+          <h2>I'm Binod</h2>
+          <h3>A web designer</h3>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.querySelector(".toggle");
+      const banner = document.querySelector(".banner");
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        banner.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

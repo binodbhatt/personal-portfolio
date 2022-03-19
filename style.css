@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    background: #21283a;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #ed325f;
+    transition: 1s;
+}
+
+section.active::before {
+    background: #21283a;
+    box-shadow: 0 0 0 1200px #1ede6d;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(https://cdn-icons-png.flaticon.com/512/545/545705.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+header .toggle.active {
+    background: url(https://cdn-icons-png.flaticon.com/512/1828/1828747.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
