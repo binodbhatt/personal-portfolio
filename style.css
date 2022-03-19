@@ -200,7 +200,7 @@ header .toggle.active {
     transform-origin: left;
 }
 
-menu {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
