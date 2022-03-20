@@ -66,6 +66,7 @@ header .toggle {
     background-position: center;
     background-size: 30px;
     cursor: pointer;
+    filter: invert(1);
 }
 
 header .toggle.active {
