@@ -127,26 +127,24 @@
             banner.classList.toggle('active');
         }
 
-        function disableScroll() {
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-                window.onscroll = function () {
-                    window.scrollTo(scrollLeft, scrollTop);
-                };
-        }
-
-        function enableScroll() {
-            window.onscroll = function () { };
-        }
-
-        enableScroll();
-
-        if (banner.ClassName = "active") {
-            disableScroll();
+        if (toggle.className = "active") {
+            lockA();
         } else {
-            enableScroll();
+            unlock();
         }
+
+        function lockA() {
+            var xPos = window.scrollX;
+            var yPos = window.scrollY;
+            window.onscroll = () => {
+                window.scroll(xPos, yPos);
+            };
+        }
+
+        function unlock() {
+            window.onscroll = "";
+        }
+
     </script>
 </body>
 
