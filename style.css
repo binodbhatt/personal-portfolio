@@ -314,7 +314,8 @@ body{
     background: #222;
 }
 .container{
-    position: relative;
+    position: absolute;
+    top: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
