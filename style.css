@@ -84,7 +84,7 @@ header .toggle.active {
     max-width: 400px;
 }
 
-.content {
+.content-header {
     position: relative;
     z-index: 2;
     display: flex;
@@ -94,12 +94,12 @@ header .toggle.active {
     transform-origin: right;
 }
 
-.content .contentBx {
+.content-header .contentBx-header {
     position: relative;
     max-width: 600px;
 }
 
-.content .contentBx h4 {
+.content-header .contentBx-header h4 {
     font-weight: 400;
     color: #1ede6d;
     font-size: 1.5em;
@@ -107,27 +107,27 @@ header .toggle.active {
     margin-bottom: 10px;
 }
 
-.content .contentBx h2 {
+.content-header .contentBx-header h2 {
     font-size: 4em;
     line-height: 1em;
     color: #fff;
 }
 
-.content .contentBx h3 {
+.content-header .contentBx-header h3 {
     font-weight: 300;
     color: #fff;
     font-size: 2em;
     line-height: 1.5em;
 }
 
-.content .contentBx p {
+.content-header .contentBx-header p {
     font-size: 1em;
     color: #fff;
     margin: 10px 0 20px;
     font-weight: 300;
 }
 
-.content .contentBx a {
+.content-header .contentBx-header a {
     display: inline-block;
     color: #fff;
     padding: 10px 20px;
@@ -141,12 +141,12 @@ header .toggle.active {
     letter-spacing: 2px;
 }
 
-.content .contentBx a:last-child {
+.content-header .contentBx-header a:last-child {
     background: #1ede6d;
     color: #111;
 }
 
-.content .contentBx a:hover {
+.content-header .contentBx-header a:hover {
     letter-spacing: 4px;
     background: #fff;
     color: #111;
@@ -195,7 +195,7 @@ header .toggle.active {
 }
 
 .banner.active .sci,
-.banner.active .content,
+.banner.active .content-header,
 .banner.active .logo {
     transform: scale(0);
     transform-origin: left;
@@ -256,7 +256,7 @@ header .toggle.active {
         opacity: 0;
     }
 
-    .content {
+    .content-header {
         margin: 50px 0;
     }
 
@@ -279,21 +279,21 @@ header .toggle.active {
         color: #fff;
     }
 
-    .content .contentBx h2 {
+    .content-header .contentBx-header h2 {
         font-size: 2.2em;
     }
 
-    .content .contentBx h3 {
+    .content-header .contentBx-header h3 {
         font-size: 1.5em;
     }
 
-    .content .contentBx a {
+    .content-header .contentBx-header a {
         padding: 6px 15px;
         margin-right: 5px;
     }
 
     .banner.active .sci,
-    .bannet.active .content,
+    .bannet.active .content-header,
     .banner.active .logo .banner.active .men {
         transition: 0s;
     }
