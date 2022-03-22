@@ -13,7 +13,7 @@
     <section class="banner">
         <header>
             <a href="#" class="logo">Portfolio</a>
-            <div class="toggle"></div>
+            <div class="toggle" onclick="lockA()"></div>
         </header>
         <img src="https://www.pngplay.com/wp-content/uploads/4/Man-No-Background.png" class="men">
         <div class="content-header">
@@ -127,22 +127,12 @@
             banner.classList.toggle('active');
         }
 
-        if (toggle.className = "active") {
-            lockA();
-        } else {
-            unlock();
-        }
-
         function lockA() {
             var xPos = window.scrollX;
             var yPos = window.scrollY;
             window.onscroll = () => {
                 window.scroll(xPos, yPos);
             };
-        }
-
-        function unlock() {
-            window.onscroll = "";
         }
 
     </script>
